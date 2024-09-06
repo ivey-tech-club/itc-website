@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import social1 from "../assets/social1.png";
 import social2 from "../assets/social2.png";
+import Provide from "./Provide";
+import OurNumbers from "./OurNumbers";
 const about = () => {
 	return (
 		<div>
@@ -54,7 +56,10 @@ const about = () => {
 			</div>
 
 			{/* Numbers */}
-			<div className="bg-[#E9F2EB] py-16">Our Numbers</div>
+			<OurNumbers />
+
+			{/* What We Provide */}
+			<Provide />
 		</div>
 	);
 };
