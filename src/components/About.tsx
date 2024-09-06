@@ -32,7 +32,12 @@ const about = () => {
 					<div className="flex justify-between items-center">
 						{/* Image 1 */}
 						<div>
-							<Image className="ml-32" src={social1} alt="Group Photo 1" />
+							<Image
+								className="ml-32"
+								src={social1}
+								alt="Group Photo 1"
+								draggable="false"
+							/>
 						</div>
 
 						{/* Image 2 */}
@@ -41,6 +46,7 @@ const about = () => {
 								className="mr-48 mb-32"
 								src={social2}
 								alt="Group Photo 2"
+								draggable="false"
 							/>
 						</div>
 					</div>
