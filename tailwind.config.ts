@@ -8,10 +8,13 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				syne: ["Syne", "sans-serif"],
+			},
 			colors: {
 				background: "var(--background)",
 				foreground: "var(--foreground)",
-				"ivey-green": "#034638",
+				iveyGreen: "#034638",
 			},
 		},
 	},
