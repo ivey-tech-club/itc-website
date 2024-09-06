@@ -33,7 +33,7 @@ const about = () => {
 						{/* Image 1 */}
 						<div>
 							<Image
-								className="ml-32"
+								className="ml-32 sm:ml-16"
 								src={social1}
 								alt="Group Photo 1"
 								draggable="false"
@@ -54,7 +54,7 @@ const about = () => {
 			</div>
 
 			{/* Numbers */}
-			<div className="bg-[#E9F2EB] py-16"></div>
+			<div className="bg-[#E9F2EB] py-16">Our Numbers</div>
 		</div>
 	);
 };

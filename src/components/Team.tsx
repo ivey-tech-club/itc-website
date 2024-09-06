@@ -131,7 +131,7 @@ const Team = () => {
 		>
 			<div className="text-center mb-8"> 2024-2025 Team </div>
 
-			<div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-2">
+			<div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-2">
 				{members.map((member, index) => (
 					<Avatar
 						key={index}
