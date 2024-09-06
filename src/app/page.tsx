@@ -1,6 +1,5 @@
-import Image from "next/image";
 import Navbar from "../components/Navbar";
-import Footer from "@/components/Footer";
+import Footer from "@/components/footer";
 import Landing from "@/components/Landing";
 import About from "@/components/About";
 import Team from "@/components/Team";
