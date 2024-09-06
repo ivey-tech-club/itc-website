@@ -16,7 +16,7 @@ const Landing = () => {
 
 			<div className="absolute inset-0 flex flex-col">
 				{/* ITC Logo */}
-				<div className="ml-28 mt-32">
+				<div className="ml-4 md:ml-28 mt-4 md:mt-32">
 					<Image
 						src={logo}
 						alt="logo"
@@ -25,14 +25,14 @@ const Landing = () => {
 						draggable="false"
 					/>
 
-					<div className="mt-8 font-syne text-iveyGreen">
+					<div className="mt-4 md:mt-8 font-syne text-iveyGreen">
 						Ivey Technology Club is building the {""}
 						<div>
 							tech community at <b>Ivey Business School </b>
 						</div>
 					</div>
 					{/* Bottom decor */}
-					<div className="mt-60">
+					<div className="mt-4 md:mt-60">
 						<Image src={decor} alt="decor" draggable="false" />
 					</div>
 				</div>
