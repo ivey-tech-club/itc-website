@@ -4,16 +4,17 @@ import logo from "../assets/itc.png";
 import Image from "next/image";
 import decor from "../assets/splash-decor.png";
 import { AiOutlineDiscord } from "react-icons/ai";
+import { CiGlobe } from "react-icons/ci";
 
 const Landing = () => {
-  return (
-    <div className="relative" id="#">
-      <Image
-        src={background}
-        alt="background"
-        className="w-full h-auto"
-        draggable="false"
-      />
+	return (
+		<div className="relative" id="#">
+			<Image
+				src={background}
+				alt="background"
+				className="w-full h-1/2"
+				draggable="false"
+			/>
 
       <div className="absolute inset-0 flex flex-col">
         {/* ITC Logo */}
@@ -50,18 +51,35 @@ const Landing = () => {
 					</div>
 
 					{/* Discord Links */}
-					<a
-						href="https://discord.gg/p9SPdrNaHy"
-						rel="noreferrer"
-						target="_blank"
-						className="flex items-center space-x-2 mt-4"
-					>
-						<AiOutlineDiscord
-							className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-iveyGreen"
-							size={50}
-						/>
-						<span className="text-iveyGreen">Join our Discord</span>
-					</a>
+					<div className="flex items-center space-x-2 mt-4">
+						<a
+							href="https://discord.gg/p9SPdrNaHy"
+							rel="noreferrer"
+							target="_blank"
+							className="flex items-center space-x-2 border border-iveyGreen rounded-md px-4"
+						>
+							<AiOutlineDiscord
+								className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-iveyGreen"
+								size={50}
+							/>
+							<span className="text-iveyGreen">Join our Discord {""}</span>
+						</a>
+					</div>
+
+					<div className="flex items-center space-x-2 mt-4">
+						<a
+							href="https://discord.gg/p9SPdrNaHy"
+							rel="noreferrer"
+							target="_blank"
+							className="flex items-center space-x-2 border border-iveyGreen rounded-md px-4"
+						>
+							<CiGlobe
+								className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-iveyGreen"
+								size={50}
+							/>
+							<span className="text-iveyGreen">View Our Alumni{""}</span>
+						</a>
+					</div>
 
 					{/* <a
 						href="https://discord.gg/p9SPdrNaHy"
