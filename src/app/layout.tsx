@@ -13,6 +13,13 @@ const geistMono = localFont({
 	variable: "--font-geist-mono",
 	weight: "100 900",
 });
+const redFive = localFont({
+	src: "./fonts/REDFIVE_.woff",
+	variable: "--font-red-five",
+	weight: "normal",
+});
+
+export const fonts = [geistSans, geistMono, redFive];
 
 export const metadata: Metadata = {
 	title: "Ivey Tech Club",

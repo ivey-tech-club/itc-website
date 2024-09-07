@@ -47,7 +47,7 @@ const Provide = () => {
 	return (
 		<div className=" bg-[#E9F2EB] py-12 px-4 sm:px-6 lg:px-8">
 			<div className="max-w-5xl mx-auto p-8">
-				<h1 className="text-2xl font-bold font-redfive text-iveyGreen mb-10 text-left">
+				<h1 style={{ fontFamily: "RedFive Regular" }} className="text-2xl font-bold text-iveyGreen mb-10 text-left">
 					WHAT WE PROVIDE <span className="text-iveyGreen">💚</span>
 				</h1>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
