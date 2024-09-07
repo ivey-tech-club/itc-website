@@ -5,8 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap");
 
 @font-face {
-	font-family: "RedFive";
-	src: url("/fonts/REDFIVE_.TTF") format("truetype");
-	font-weight: normal;
-	font-style: normal;
+  font-family: "RedFive";
+  src: url("/fonts/REDFIVE_.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
