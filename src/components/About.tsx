@@ -13,12 +13,12 @@ const about = () => {
 			>
 				<div className="max-w-5xl mx-auto px-6 py-16">
 					{/* Title */}
-					<h2 className="text-4xl font-bold text-green-800 text-center mb-8">
+					<h2 className="text-2xl font-redfive font-bold text-green-800 text-left mb-8">
 						ABOUT US
 					</h2>
 
 					{/* Text Content */}
-					<div className="bg-white p-6 shadow-lg rounded-md text-center mb-12">
+					<div className="text-left mb-12">
 						<p className="text-gray-600 text-lg leading-relaxed">
 							Ivey Tech Club (ITC) is dedicated to building a vibrant community
 							for Ivey students interested in technology. We make the tech

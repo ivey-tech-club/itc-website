@@ -10,6 +10,8 @@ const config: Config = {
 		extend: {
 			fontFamily: {
 				syne: ["Syne", "sans-serif"],
+				plex: ['"IBM Plex Mono"', "monospace"],
+				redfive: ["RedFive", "sans-serif"],
 			},
 			colors: {
 				background: "var(--background)",

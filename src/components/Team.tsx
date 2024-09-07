@@ -129,7 +129,9 @@ const Team = () => {
 			id="team"
 			className="bg-[#E9F2EB] min-h-screen flex flex-col items-center justify-center"
 		>
-			<p className="mb-8 font-extrabold text-iveyGreen">2024-2025 Exec Team</p>
+			<p className="mb-8 font-extrabold text-2xl text-iveyGreen">
+				2024-2025 Exec Team
+			</p>
 
 			<div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-2">
 				{members.map((member, index) => (

@@ -8,8 +8,10 @@ const ServiceItem = ({
 	description: string;
 }) => (
 	<div className="mb-6">
-		<h2 className="text-emerald-800 text-xl font-semibold mb-2">✦ {title}</h2>
-		<p className="text-gray-700">{description}</p>
+		<h2 className="font-syne text-iveyGreen text-xl font-semibold mb-2">
+			✦ {title}
+		</h2>
+		<p className="font-syne text-gray-700">{description}</p>
 	</div>
 );
 
@@ -44,9 +46,9 @@ const Provide = () => {
 
 	return (
 		<div className=" bg-[#E9F2EB] py-12 px-4 sm:px-6 lg:px-8">
-			<div className="max-w-5xl mx-auto bg-white rounded-lg shadow-md p-8">
-				<h1 className="text-4xl font-bold text-emerald-800 mb-10 text-left">
-					WHAT WE PROVIDE <span className="text-green-500">💚</span>
+			<div className="max-w-5xl mx-auto p-8">
+				<h1 className="text-2xl font-bold font-redfive text-iveyGreen mb-10 text-left">
+					WHAT WE PROVIDE <span className="text-iveyGreen">💚</span>
 				</h1>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 					<div className="space-y-6">

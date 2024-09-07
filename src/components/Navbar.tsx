@@ -34,28 +34,28 @@ const Navbar = () => {
 						{/* Navigation Links */}
 						<a
 							href="#about"
-							className="nav-link text-iveyGreen hover:text-gray-900 font-semibold mr-5"
+							className="nav-link text-iveyGreen font-plex hover:text-gray-900 font-semibold mr-5"
 							onClick={(e) => handleSmoothScroll(e, "#about")}
 						>
 							About
 						</a>
 						<a
 							href="#events"
-							className="nav-link text-iveyGreen hover:text-gray-900 font-semibold mr-5"
+							className="nav-link text-iveyGreen font-plex hover:text-gray-900 font-semibold mr-5"
 							onClick={(e) => handleSmoothScroll(e, "#events")}
 						>
 							Events
 						</a>
 						<a
 							href="#team"
-							className="nav-link text-iveyGreen hover:text-gray-900 font-semibold mr-5"
+							className="nav-link text-iveyGreen font-plex hover:text-gray-900 font-semibold mr-5"
 							onClick={(e) => handleSmoothScroll(e, "#team")}
 						>
 							Team
 						</a>
 						<a
 							href="#contact"
-							className="nav-link text-iveyGreen hover:text-gray-900 font-semibold mr-5"
+							className="nav-link text-iveyGreen font-plex hover:text-gray-900 font-semibold mr-5"
 							onClick={(e) => handleSmoothScroll(e, "#contact")}
 						>
 							Contact

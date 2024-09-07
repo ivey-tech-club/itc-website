@@ -8,8 +8,10 @@ const StatItem = ({
 	description: string;
 }) => (
 	<div className="text-center">
-		<p className="text-4xl font-bold text-emerald-800 mb-2">{number}</p>
-		<p className="text-emerald-700">{description}</p>
+		<p className="font-syne text-5xl font-bold text-emerald-800 mb-2">
+			{number}
+		</p>
+		<p className="font-syne text-emerald-700">{description}</p>
 	</div>
 );
 
@@ -25,10 +27,10 @@ const OurNumbers = () => {
 			{" "}
 			{/* Increase the py-12 value to py-16 */}
 			<div className="max-w-4xl mx-auto">
-				<h2 className="text-3xl font-bold text-emerald-800 mb-8 text-left">
+				<h2 className="text-2xl font-redfive font-bold text-emerald-800 mb-8 text-left">
 					OUR NUMBERS
 				</h2>
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 font-syne">
 					{stats.map((stat, index) => (
 						<StatItem
 							key={index}

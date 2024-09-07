@@ -2,9 +2,9 @@ import React from "react";
 
 const Contact = () => {
 	return (
-		<section id="contact" className="bg-[#E9F2EB] py-12">
+		<section id="contact" className="bg-[#E9F2EB] py-12 font-syne">
 			<div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-				<h2 className="text-3xl font-bold text-gray-800 text-left mb-6">
+				<h2 className="text-2xl font-bold text-iveyGreen text-left mb-6">
 					Contact Us
 				</h2>
 
@@ -51,7 +51,7 @@ const Contact = () => {
 						<textarea
 							id="message"
 							name="message"
-							rows="4"
+							rows={4}
 							className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-iveyGreen focus:border-iveyGreen sm:text-sm"
 							placeholder="Your message"
 							required
