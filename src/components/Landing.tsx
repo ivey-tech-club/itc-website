@@ -1,10 +1,11 @@
 import React from "react";
-import background from "../assets/splash page.png";
-import logo from "../assets/itc.png";
 import Image from "next/image";
-import decor from "../assets/splash-decor.png";
 import { AiOutlineDiscord } from "react-icons/ai";
 import { CiGlobe } from "react-icons/ci";
+
+import background from "../assets/splash page.png";
+import logo from "../assets/itc.png";
+import decor from "../assets/splash-decor.png";
 
 const Landing = () => {
   return (

@@ -20,7 +20,7 @@ import grace from "../assets/grace.jpg";
 import ana from "../assets/ana.jpg";
 import sarah from "../assets/sarah.jpg";
 import dennis from "../assets/dennis.jpg";
-import { AiOutlineDiscord, AiOutlineContacts } from "react-icons/ai";
+import { AiOutlineContacts } from "react-icons/ai";
 // import { CiGlobe } from "react-icons/ci";
 
 const members = [
