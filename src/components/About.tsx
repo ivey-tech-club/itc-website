@@ -13,7 +13,10 @@ const about = () => {
 			>
 				<div className="max-w-5xl mx-auto px-6 py-16">
 					{/* Title */}
-					<h2 className="text-2xl font-redfive font-bold text-green-800 text-left mb-8">
+					<h2
+						style={{ fontFamily: "RedFive Regular" }}
+						className="text-2xl font-bold text-iveyGreen text-left mb-8"
+					>
 						ABOUT US
 					</h2>
 

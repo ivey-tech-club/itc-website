@@ -9,7 +9,7 @@ import kyle from "../assets/kyle.jpg";
 import noah from "../assets/noah.jpg";
 import daniel from "../assets/daniel.jpg";
 import erin from "../assets/erin.jpg";
-//import belinda from "../assets/belinda.jpg";
+import belinda from "../assets/belinda.jpg";
 import mayo from "../assets/mayo.jpg";
 import bruce from "../assets/bruce.jpg";
 import sophia from "../assets/sophia.jpg";
@@ -70,7 +70,7 @@ const members = [
 	{
 		name: "Belinda Zhao",
 		title: "Expedition",
-		image: vivek,
+		image: belinda,
 	},
 	{
 		name: "Mayo Olusanya",
@@ -129,7 +129,10 @@ const Team = () => {
 			id="team"
 			className="bg-[#E9F2EB] min-h-screen flex flex-col items-center justify-center"
 		>
-			<p className="mb-8 font-extrabold text-2xl text-iveyGreen">
+			<p
+				style={{ fontFamily: "RedFive Regular" }}
+				className="mb-8 text-2xl text-iveyGreen text-left w-full max-w-3xl pl-4"
+			>
 				2024-2025 Exec Team
 			</p>
 
