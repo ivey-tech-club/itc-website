@@ -36,23 +36,26 @@ const about = () => {
 					{/* Image Section */}
 					<div className="flex justify-between items-center">
 						{/* Image 1 */}
-						<div>
-							<Image
-								className="ml-32 sm:ml-16"
-								src={social1}
-								alt="Group Photo 1"
-								draggable="false"
-							/>
-						</div>
+						<div className="flex flex-col md:flex-row justify-center items-center">
+							{/* Image 1 */}
+							<div className="mb-8 md:mb-0">
+								<Image
+									className="mx-auto md:ml-32 md:mr-8"
+									src={social1}
+									alt="Group Photo 1"
+									draggable="false"
+								/>
+							</div>
 
-						{/* Image 2 */}
-						<div>
-							<Image
-								className="mr-48 mb-32"
-								src={social2}
-								alt="Group Photo 2"
-								draggable="false"
-							/>
+							{/* Image 2 */}
+							<div>
+								<Image
+									className="mx-auto md:mr-56 md:mb-32"
+									src={social2}
+									alt="Group Photo 2"
+									draggable="false"
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
