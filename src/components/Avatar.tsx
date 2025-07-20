@@ -12,14 +12,16 @@ const Avatar = ({
 }) => {
 	return (
 		<div className="border-transparent-500 flex flex-col items-center">
-			<Image
-				height={100}
-				width={100}
-				src={image}
-				alt={name}
-				className="rounded-full"
-				draggable="false"
-			/>
+			<div className="w-[120px] h-[120px] rounded-full overflow-hidden">
+				<Image
+					height={120}
+					width={120}
+					src={image}
+					alt={name}
+					className="w-full h-full object-cover"
+					draggable="false"
+				/>
+			</div>
 			<h2 className="mt-4 text-lg font-bold">{name}</h2>
 			<p className="text-sm text-center">{title}</p>
 		</div>

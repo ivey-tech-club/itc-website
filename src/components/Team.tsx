@@ -1,129 +1,119 @@
 import React from "react";
 import Avatar from "./Avatar";
-import ray from "../assets/ray.jpg";
-import vivek from "../assets/vivek.jpg";
-import jarry from "../assets/jarry.jpg";
-import bonnie from "../assets/bonnie.jpg";
-import charlotte from "../assets/charlotte.jpg";
-import kyle from "../assets/kyle.jpg";
-import noah from "../assets/noah.jpg";
-import daniel from "../assets/daniel.jpg";
-import erin from "../assets/erin.jpg";
-import belinda from "../assets/belinda.jpg";
-import mayo from "../assets/mayo.jpg";
-import bruce from "../assets/bruce.jpg";
-import sophia from "../assets/sophia.jpg";
-import izzie from "../assets/izzie.jpg";
-import bianca from "../assets/bianca.jpg";
-import joy from "../assets/joy.jpg";
-import grace from "../assets/grace.jpg";
-import ana from "../assets/ana.jpg";
-import sarah from "../assets/sarah.jpg";
-import dennis from "../assets/dennis.jpg";
+
+import jocelyn from "../assets/team/jocelyn.jpg";
+import ronin from "../assets/team/ronin.jpg";
+import audrey from "../assets/team/audrey.jpg";
+import laura from "../assets/team/laura.jpg";
+import jennifer from "../assets/team/jennifer.jpg";
+import rachel from "../assets/team/rachel.jpg";
+import laurel from "../assets/team/laurel.jpg";
+import harvey from "../assets/team/harvey.jpg";
+import uttej from "../assets/team/uttej.jpg";
+import ashiti from "../assets/team/ashiti.jpg";
+import evan from "../assets/team/evan.jpg";
+import affan from "../assets/team/affan.jpg";
+import pranav from "../assets/team/pranav.jpg";
+import carina from "../assets/team/carina.jpg";
+import sophia from "../assets/team/sophia.jpg";
+import marianna from "../assets/team/marianna.jpg";
+import lecia from "../assets/team/lecia.jpg";
+import olivia from "../assets/team/olivia.jpg";
+
 import { AiOutlineContacts } from "react-icons/ai";
 // import { CiGlobe } from "react-icons/ci";
 
 const members = [
   {
-    name: "Ray Wang",
-    title: "President",
-    image: ray,
+    name: "Jocelyn Chang",
+    title: "Co-President",
+    image: jocelyn,
   },
   {
-    name: "Vivek Jariwala",
-    title: "President",
-    image: vivek,
+    name: "Ronin Williams-Young",
+    title: "Co-President",
+    image: ronin,
   },
   {
-    name: "Jarry Wu",
-    title: "Design & Community",
-    image: jarry,
+    name: "Audrey Li",
+    title: "Communications",
+    image: audrey,
   },
   {
-    name: "Bonnie Qiu",
-    title: "Design & Community",
-    image: bonnie,
+    name: "Laura Caraccio",
+    title: "Communications",
+    image: laura,
   },
   {
-    name: "Charlotte Lemon",
-    title: "Design & Community",
-    image: charlotte,
-  },
-  {
-    name: "Kyle Chen",
+    name: "Jennifer Cao",
     title: "Development",
-    image: kyle,
+    image: jennifer,
   },
   {
-    name: "Noah Xu",
+    name: "Rachel Chen",
     title: "Development",
-    image: noah,
+    image: rachel,
   },
   {
-    name: "Daniel Pang",
-    title: "Events",
-    image: daniel,
+    name: "Laurel Dong",
+    title: "Social",
+    image: laurel,
   },
   {
-    name: "Erin Hu",
+    name: "Harvey Zhu",
+    title: "Social",
+    image: harvey,
+  },
+  {
+    name: "Uttej Mannava",
+    title: "Sponsorship",
+    image: uttej,
+  },
+  {
+    name: "Ashiti Patel",
+    title: "Sponsorship",
+    image: ashiti,
+  },
+  {
+    name: "Evan Woo",
     title: "Expedition",
-    image: erin,
+    image: evan,
   },
   {
-    name: "Belinda Zhao",
+    name: "Affan Bhimani",
     title: "Expedition",
-    image: belinda,
+    image: affan,
   },
   {
-    name: "Mayo Olusanya",
-    title: "Events",
-    image: mayo,
+    name: "Pranav Arora",
+    title: "Flagship",
+    image: pranav,
   },
   {
-    name: "Bruce Liu",
-    title: "Events",
-    image: bruce,
+    name: "Carina Luo",
+    title: "Flagship",
+    image: carina,
   },
   {
-    name: "Sophia Ma",
-    title: "Events",
+    name: "Sophia Yuan",
+    title: "Careers",
     image: sophia,
   },
   {
-    name: "Izzie Pewarchuk",
-    title: "Flagship",
-    image: izzie,
+    name: "Marianna Speranza",
+    title: "Careers",
+    image: marianna,
   },
   {
-    name: "Bianca Bhardwaj",
-    title: "Flagship",
-    image: bianca,
-  },
-  {
-    name: "Joy Zheng",
+    name: "Lecia Cheng",
     title: "Mentorship",
-    image: joy,
+    image: lecia,
   },
   {
-    name: "Grace Zhou",
+    name: "Olivia Yong",
     title: "Mentorship",
-    image: grace,
-  },
-  {
-    name: "Ana Balteanu",
-    title: "Mentorship",
-    image: ana,
-  },
-  {
-    name: "Sarah Huang",
-    title: "Social",
-    image: sarah,
-  },
-  {
-    name: "Dennis Zhang",
-    title: "Social",
-    image: dennis,
-  },
+    image: olivia,
+  }
 ];
 const Team = () => {
   return (
@@ -138,15 +128,29 @@ const Team = () => {
         2024-2025 Exec Team
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-2">
-        {members.map((member, index) => (
-          <Avatar
-            key={index}
-            name={member.name}
-            title={member.title}
-            image={member.image}
-          />
-        ))}
+      <div className="avatars-wrapper">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 w-full max-w-4xl md:pl-4 mb-8">
+          {members.slice(0, 2).map((member, index) => (
+            <Avatar
+              key={index}
+              name={member.name}
+              title={member.title}
+              image={member.image}
+            />
+          ))}
+        </div>
+
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 w-full max-w-4xl md:pl-4 mb-8">
+          {members.slice(2).map((member, index) => (
+            <Avatar
+              key={index + 2}
+              name={member.name}
+              title={member.title}
+              image={member.image}
+            />
+          ))}
+        </div>
       </div>
       <br></br>
 
