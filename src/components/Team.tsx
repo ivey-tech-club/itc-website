@@ -125,7 +125,7 @@ const Team = () => {
         style={{ fontFamily: "RedFive Regular" }}
         className="mb-8 text-2xl text-iveyGreen text-left w-full max-w-3xl pl-4"
       >
-        2024-2025 Exec Team
+        2025-2026 Exec Team
       </p>
 
       <div className="avatars-wrapper">
