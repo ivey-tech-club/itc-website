@@ -13,18 +13,7 @@ interface EventBoxProps {
 export const EventBox: React.FC<EventBoxProps> = ({ name, date, location, details, image }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     
-    
-    const boxStyle: React.CSSProperties = {
-        width: "90%",
-        background: "#fff",
-        border: "1.5px solid #d1e7dd",
-        borderRadius: "12px",
-        padding: "16px 16px",
-        marginBottom: "16px",
-        display: "flex",
-        alignItems: "center",
-        gap: "12px"
-    };
+
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             const modal = document.getElementById('modal');
@@ -48,7 +37,7 @@ export const EventBox: React.FC<EventBoxProps> = ({ name, date, location, detail
                 onClick={() => setIsModalOpen(true)}
                 tabIndex={0}
                 role="button"
-                className="bg-white rounded-2xl shadow-md w-full max-w-[320px] h-[400px] flex flex-col items-center justify-center relative overflow-hidden cursor-pointer"
+                className="bg-white rounded-2xl shadow-md w-full max-w-[320px] h-[400px] flex flex-col items-center justify-center relative overflow-hidden cursor-pointer hover:shadow-lg transition-shadow"
             >
                 <div className="flex flex-col items-center justify-center w-full h-full">
                 <div className="w-full flex flex-col">

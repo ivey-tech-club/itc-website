@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
-import InstagramEmbed from "./Instagram";
 import { EventBox } from "./EventBox";
 
-import audrey from "../assets/team/audrey.jpg";
 import btc from "../assets/btc.png";
 import sf from "../assets/sf.png";
 
@@ -11,16 +9,16 @@ const Events = () => {
   return (
     <div
       id="events"
-      className="bg-[#E9F2EB] min-h-screen flex flex-col items-center justify-center"
+      className="bg-[#E9F2EB] min-h-screen flex flex-col items-center justify-start pt-16 pb-20"
     >
       <div
       style={{ fontFamily: "RedFive Regular" }}
-      className="text-iveyGreen text-2xl mb-8 text-left w-full max-w-3xl pl-4"
+      className="text-iveyGreen text-2xl mb-8 text-left w-full max-w-6xl px-4"
       >
-      Events
+      Upcoming Events
       </div>
       
-    <div className="flex flex-col md:flex-row w-full max-w-[1200px] gap-6 px-4 md:px-6 overflow-x-auto items-center justify-center py-4">
+    <div className="flex flex-wrap justify-center gap-6 w-full max-w-6xl px-4">
       <EventBox
         name={"Breaking Into Tech Conference"}
         date={"Oct 18, 2025"}
@@ -41,23 +39,7 @@ const Events = () => {
       />
         <a href="https://www.instagram.com/iveytechclub/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
           <div
-            style={{
-              background: "#176a4a",
-              borderRadius: "16px",
-              boxShadow: "0 2px 8px rgba(0,0,0,0.07)",
-              padding: "20px",
-              width: "320px",
-              height: "400px",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              color: "#fff",
-              fontWeight: "bold",
-              fontSize: "1.5rem",
-              cursor: "pointer",
-              transition: "background 0.2s, color 0.2s"
-            }}
+            className="bg-iveyGreen rounded-2xl shadow-md w-[320px] h-[400px] flex flex-col items-center justify-center relative overflow-hidden cursor-pointer hover:shadow-lg transition-shadow"
           >
             <h2 className="font-syne text-white text-xl font-semibold mb-2" style={{textAlign: 'center', padding: '0 24px', display: 'flex', alignItems: 'center', gap: '12px'}}>
               More events
