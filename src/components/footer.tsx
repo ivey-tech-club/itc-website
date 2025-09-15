@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="mx-auto p-4 flex flex-col text-center text-neutral-900 md:flex-row md:items-center md:justify-between">
           {/* Text Section */}
           <div className="flex flex-col md:flex-row items-center space-y-1 md:space-y-0 md:space-x-2">
-            <span className="text-iveyGreen">© 2024 Ivey Tech Club |</span>
+            <span className="text-iveyGreen">© 2025 Ivey Tech Club |</span>
             <span className="text-iveyGreen">
               All Rights Reserved | Made with 💚
             </span>

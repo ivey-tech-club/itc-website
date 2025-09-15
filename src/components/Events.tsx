@@ -35,17 +35,18 @@ const Events = () => {
         details={
         "Join us for an exclusive week-long trip to San Francisco. Throughout the week, you’ll visit leading firms and fast-growing startups, attend curated networking events and panels with industry professionals, and immerse yourself in Bay Area culture. In past years, students have met with industry leaders at companies like NVIDIA, Salesforce, and Scale AI. This will be an amazing opportunity during fall reading week to explore both tech and business career paths, build connections, and discover one of the most dynamic tech hubs in the world."
         }
+        ticketLink="https://docs.google.com/forms/d/e/1FAIpQLSePjpeio5q0_pAFc5EeANGUt9L3t8KYo1tkvdjZlOOwT1aAng/viewform?pli=1"
         image={sf}
       />
         <a href="https://www.instagram.com/iveytechclub/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-          <div
-            className="bg-iveyGreen rounded-2xl shadow-md w-[320px] h-[400px] flex flex-col items-center justify-center relative overflow-hidden cursor-pointer hover:shadow-lg transition-shadow"
-          >
+            <div
+            className="bg-iveyGreen rounded-2xl w-[320px] h-[400px] flex flex-col items-center justify-center relative overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300 ease-in-out"
+            >
             <h2 className="font-syne text-white text-xl font-semibold mb-2" style={{textAlign: 'center', padding: '0 24px', display: 'flex', alignItems: 'center', gap: '12px'}}>
               More events
               <svg width="28" height="28" fill="none" stroke="#fff" strokeWidth="3" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </h2>
-          </div>
+            </div>
         </a>
       </div>
     </div>

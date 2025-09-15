@@ -53,6 +53,13 @@ const Navbar = () => {
             >
               Team
             </a>
+            <a
+              href="#sponsors"
+              className="nav-link text-iveyGreen font-plex hover:text-gray-900 font-semibold mr-5"
+              onClick={(e) => handleSmoothScroll(e, "#sponsors")}
+            >
+              Sponsors
+            </a>
           </div>
         </div>
       </div>

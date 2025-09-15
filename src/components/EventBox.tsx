@@ -8,9 +8,10 @@ interface EventBoxProps {
     location: string;
     details: string;
     image: StaticImageData;
+    ticketLink?: string;
 }
 
-export const EventBox: React.FC<EventBoxProps> = ({ name, date, location, details, image }) => {
+export const EventBox: React.FC<EventBoxProps> = ({ name, date, location, details, image, ticketLink }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     
 
@@ -37,7 +38,7 @@ export const EventBox: React.FC<EventBoxProps> = ({ name, date, location, detail
                 onClick={() => setIsModalOpen(true)}
                 tabIndex={0}
                 role="button"
-                className="bg-white rounded-2xl shadow-md w-full max-w-[320px] h-[400px] flex flex-col items-center justify-center relative overflow-hidden cursor-pointer hover:shadow-lg transition-shadow"
+                className="bg-white rounded-2xl w-full max-w-[320px] h-[400px] flex flex-col items-center justify-center relative overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300 "
             >
                 <div className="flex flex-col items-center justify-center w-full h-full">
                 <div className="w-full flex flex-col">
@@ -134,12 +135,25 @@ export const EventBox: React.FC<EventBoxProps> = ({ name, date, location, detail
                             </div>
                         </div>
                         <p className="font-syne text-gray-700 mb-6">{details}</p>
-                        <button 
-                            disabled
-                            className="font-syne bg-iveyGreen text-white px-6 py-3 rounded-lg opacity-75 cursor-not-allowed"
-                        >
-                            Tickets Coming Soon
-                        </button>
+                        {ticketLink ? (
+                            <a
+                                href={ticketLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-syne bg-iveyGreen text-white px-6 py-3 rounded-lg hover:bg-iveyGreen/90 transition-colors text-center block w-full min-w-[200px]"
+                                style={{ minWidth: 200, display: 'inline-block' }}
+                            >
+                                Get Tickets
+                            </a>
+                        ) : (
+                            <button 
+                                disabled
+                                className="font-syne bg-iveyGreen text-white px-6 py-3 rounded-lg opacity-75 cursor-not-allowed w-full min-w-[200px]"
+                                style={{ minWidth: 200, display: 'inline-block' }}
+                            >
+                                Tickets Coming Soon
+                            </button>
+                        )}
                     </div>
                 </div>
             )}
