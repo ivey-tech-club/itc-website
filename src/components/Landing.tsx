@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { AiOutlineDiscord } from "react-icons/ai";
 import { CiGlobe } from "react-icons/ci";
 
 import background from "../assets/splash page.png";
