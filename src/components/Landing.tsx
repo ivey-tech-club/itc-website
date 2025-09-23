@@ -37,25 +37,10 @@ const Landing = () => {
 						</div>
 					</div>
 
-					{/* Discord Links */}
 					<div className="flex items-center space-x-2 mt-4">
 						<a
-							href="https://discord.gg/p9SPdrNaHy"
-							rel="noreferrer"
+							href="https://www.universe.com/events/2025-ivey-hbaa-clubs-week-tickets-YNL2KZ"
 							target="_blank"
-							className="flex items-center space-x-2 border border-iveyGreen rounded-md px-4"
-						>
-							<AiOutlineDiscord
-								className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-iveyGreen"
-								size={50}
-							/>
-							<span className="text-iveyGreen">Join our Discord {""}</span>
-						</a>
-					</div>
-
-					<div className="flex items-center space-x-2 mt-4">
-						<a
-							href="#"
 							rel="noreferrer"
 							className="flex items-center space-x-2 border border-iveyGreen rounded-md px-4"
 						>
@@ -64,7 +49,7 @@ const Landing = () => {
 								size={50}
 							/>
 							<span className="text-iveyGreen">
-								Become a Member (Coming Soon!){""}
+								Become a Member{""}
 							</span>
 						</a>
 					</div>
