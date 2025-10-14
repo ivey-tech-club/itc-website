@@ -1,4 +1,6 @@
-import React from "react";
+'use client';
+
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { CiGlobe } from "react-icons/ci";
 
@@ -7,15 +9,30 @@ import logo from "../assets/itc.png";
 import decor from "../assets/splash-decor.png";
 
 const Landing = () => {
+	const [offsetY, setOffsetY] = useState(0);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setOffsetY(window.scrollY);
+		};
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
+
 	return (
 		<div className="relative w-full" id="#">
-			{/* Background Image */}
+			{/* Background Image with Parallax */}
 			<Image
 				src={background}
 				alt="background"
 				className="absolute inset-0 w-full h-full object-cover"
 				draggable="false"
-				style={{ height: "100%", width: "100%" }}
+				style={{
+					height: "100%",
+					width: "100%",
+					transform: `translateY(${offsetY * -0.4}px)`,
+					transition: "transform 0.1s linear",
+				}}
 			/>
 
 			<div className="relative flex flex-col">

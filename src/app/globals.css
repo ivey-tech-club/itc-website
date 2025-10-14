@@ -10,3 +10,7 @@
 	font-weight: normal;
 	src: local("RedFive Regular"), url("./fonts/REDFIVE_.woff") format("woff");
 }
+
+body {
+  background-color: #E9F2EB;
+}

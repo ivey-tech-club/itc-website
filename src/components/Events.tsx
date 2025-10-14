@@ -22,6 +22,7 @@ const Events = () => {
       <EventBox
         name={"Breaking Into Tech Conference"}
         date={"Oct 18, 2025"}
+        ticketLink="https://www.universe.com/events/break-into-tech-conference-tickets-RC5JSG?ref=share-widget-buffer"
         location={"Ivey Business School"}
         details={
         "Ivey Tech Club’s flagship conference is the ideal opportunity for students exploring technology career paths and those preparing for technical recruiting. Attendees will gain insights from HBA2/3s and alumni who have worked at leading firms like EY, Amazon, Microsoft, Salesforce, and more through interactive workshops and panels. The day also features networking sessions with top Toronto-based firms right here on campus. Don’t miss out on ITC’s biggest event of the year!"
