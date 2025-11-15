@@ -99,7 +99,7 @@ const members = [
   },
   {
     name: "Lecia Cheng",
-    title: "Mentorship",
+    title: "Careers",
     image: lecia,
   }
 ];
