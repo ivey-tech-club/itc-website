@@ -26,81 +26,97 @@ const members = [
     name: "Jocelyn Chang",
     title: "Co-President",
     image: jocelyn,
+    link: "https://www.linkedin.com/in/jocelyn-chang-a710921b7/", // Add LinkedIn or other profile link here
   },
   {
     name: "Ronin Williams-Young",
     title: "Co-President",
     image: ronin,
+    link: "https://www.linkedin.com/in/ronin-williams-young/", // Add LinkedIn or other profile link here
   },
   {
     name: "Audrey Li",
     title: "Communications",
     image: audrey,
+    link: "https://www.linkedin.com/in/audreylii/", // Add LinkedIn or other profile link here
   },
   {
     name: "Laura Caraccio",
     title: "Communications",
     image: laura,
+    link: "https://www.linkedin.com/in/laura-caraccio/", // Add LinkedIn or other profile link here
   },
   {
     name: "Jennifer Cao",
     title: "Development",
     image: jennifer,
+    link: "https://www.linkedin.com/in/jenniferrcao/", // Add LinkedIn or other profile link here
   },
   {
     name: "Laurel Dong",
     title: "Social",
     image: laurel,
+    link: "https://www.linkedin.com/in/laurel-dong/", // Add LinkedIn or other profile link here
   },
   {
     name: "Harvey Zhu",
     title: "Social",
     image: harvey,
+    link: "https://www.linkedin.com/in/harvey-zhu/", // Add LinkedIn or other profile link here
   },
   {
     name: "Uttej Mannava",
     title: "Sponsorship",
     image: uttej,
+    link: "https://www.linkedin.com/in/-um/", // Add LinkedIn or other profile link here
   },
   {
     name: "Ashiti Patel",
     title: "Sponsorship",
     image: ashiti,
+    link: "https://www.linkedin.com/in/ashiti-patel/", // Add LinkedIn or other profile link here
   },
   {
     name: "Evan Woo",
     title: "Expedition",
     image: evan,
+    link: "https://www.linkedin.com/in/evan-woo/", // Add LinkedIn or other profile link here
   },
   {
     name: "Affan Bhimani",
     title: "Expedition",
     image: affan,
+    link: "https://www.linkedin.com/in/affan-bhimani-9297361bb/", // Add LinkedIn or other profile link here
   },
   {
     name: "Pranav Arora",
     title: "Flagship",
     image: pranav,
+    link: "https://www.linkedin.com/in/pranav-arora-ca/", // Add LinkedIn or other profile link here
   },
   {
     name: "Carina Luo",
     title: "Flagship",
     image: carina,
+    link: "https://www.linkedin.com/in/carina-luo/", // Add LinkedIn or other profile link here
   },
   {
     name: "Sophia Yuan",
     title: "Careers",
     image: sophia,
+    link: "https://www.linkedin.com/in/sophiay888/", // Add LinkedIn or other profile link here
   },
   {
     name: "Marianna Speranza",
     title: "Careers",
     image: marianna,
+    link: "https://www.linkedin.com/in/mariannasperanza/", // Add LinkedIn or other profile link here
   },
   {
     name: "Lecia Cheng",
     title: "Careers",
     image: lecia,
+    link: "https://www.linkedin.com/in/lecia-cheng/", // Add LinkedIn or other profile link here
   }
 ];
 const Team = () => {
@@ -124,6 +140,7 @@ const Team = () => {
               name={member.name}
               title={member.title}
               image={member.image}
+              link={member.link}
             />
           ))}
         </div>
