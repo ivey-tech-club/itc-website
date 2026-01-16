@@ -37,89 +37,239 @@ const members = [
   {
     name: "Audrey Li",
     title: "Communications",
+    role: "VP",
     image: audrey,
     link: "https://www.linkedin.com/in/audreylii/", // Add LinkedIn or other profile link here
   },
   {
     name: "Laura Caraccio",
     title: "Communications",
+    role: "VP",
     image: laura,
     link: "https://www.linkedin.com/in/laura-caraccio/", // Add LinkedIn or other profile link here
   },
   {
     name: "Jennifer Cao",
     title: "Development",
+    role: "VP",
     image: jennifer,
     link: "https://www.linkedin.com/in/jenniferrcao/", // Add LinkedIn or other profile link here
   },
   {
     name: "Laurel Dong",
     title: "Social",
+    role: "VP",
     image: laurel,
     link: "https://www.linkedin.com/in/laurel-dong/", // Add LinkedIn or other profile link here
   },
   {
     name: "Harvey Zhu",
     title: "Social",
+    role: "VP",
     image: harvey,
     link: "https://www.linkedin.com/in/harvey-zhu/", // Add LinkedIn or other profile link here
   },
   {
     name: "Uttej Mannava",
     title: "Sponsorship",
+    role: "VP",
     image: uttej,
     link: "https://www.linkedin.com/in/-um/", // Add LinkedIn or other profile link here
   },
   {
     name: "Ashiti Patel",
     title: "Sponsorship",
+    role: "VP",
     image: ashiti,
     link: "https://www.linkedin.com/in/ashiti-patel/", // Add LinkedIn or other profile link here
   },
   {
     name: "Evan Woo",
     title: "Expedition",
+    role: "VP",
     image: evan,
     link: "https://www.linkedin.com/in/evan-woo/", // Add LinkedIn or other profile link here
   },
   {
     name: "Affan Bhimani",
     title: "Expedition",
+    role: "VP",
     image: affan,
     link: "https://www.linkedin.com/in/affan-bhimani-9297361bb/", // Add LinkedIn or other profile link here
   },
   {
     name: "Pranav Arora",
     title: "Flagship",
+    role: "VP",
     image: pranav,
     link: "https://www.linkedin.com/in/pranav-arora-ca/", // Add LinkedIn or other profile link here
   },
   {
     name: "Carina Luo",
     title: "Flagship",
+    role: "VP",
     image: carina,
     link: "https://www.linkedin.com/in/carina-luo/", // Add LinkedIn or other profile link here
   },
   {
     name: "Sophia Yuan",
     title: "Careers",
+    role: "VP",
     image: sophia,
     link: "https://www.linkedin.com/in/sophiay888/", // Add LinkedIn or other profile link here
   },
   {
     name: "Marianna Speranza",
     title: "Careers",
+    role: "VP",
     image: marianna,
     link: "https://www.linkedin.com/in/mariannasperanza/", // Add LinkedIn or other profile link here
   },
   {
     name: "Lecia Cheng",
     title: "Careers",
+    role: "VP",
     image: lecia,
     link: "https://www.linkedin.com/in/lecia-cheng/", // Add LinkedIn or other profile link here
-  }
+  },
+  {
+    // Section Reps
+    name: "Luca Roma",
+    title: "Sponsorship",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Khalad Osman",
+    title: "Sponsorship",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Hadi Youssef",
+    title: "Careers",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Barry Paul",
+    title: "Careers",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Annie Yu",
+    title: "Careers",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Parum Patel",
+    title: "Communications",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Emily Yu",
+    title: "Communications",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "William Jiang",
+    title: "Social",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Stephanie Li",
+    title: "Social",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Millicent Song",
+    title: "Flagship",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Alice Nguyen",
+    title: "Flagship",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Stella Zhu",
+    title: "Flagship",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Molly Jin",
+    title: "Flagship",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Aaryan Joharapurkar",
+    title: "Development",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Gloria Qi",
+    title: "Development",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Juna Kim",
+    title: "Development",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Natalie Wang",
+    title: "Development",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Claire Kuo",
+    title: "Expedition",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Mehak Marwaha",
+    title: "Expedition",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Allison Ye",
+    title: "Expedition",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
+  {
+    name: "Dan Mick",
+    title: "Expedition",
+    role: "Section Rep",
+    link: "", // Add LinkedIn or other profile link here
+  },
 ];
 const Team = () => {
+  // Group members by title
+  const groupedMembers = members.reduce((acc, member) => {
+    if (!acc[member.title]) {
+      acc[member.title] = [];
+    }
+    acc[member.title].push(member);
+    return acc;
+  }, {} as Record<string, typeof members>);
+
   return (
     <div
       id="team"
@@ -132,18 +282,43 @@ const Team = () => {
         2025-2026 Exec Team
       </p>
 
-      <div className="avatars-wrapper">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 w-full max-w-4xl md:pl-4 mb-8">
-          {members.map((member, index) => (
-            <Avatar
-              key={index + 2}
-              name={member.name}
-              title={member.title}
-              image={member.image}
-              link={member.link}
-            />
-          ))}
-        </div>
+      <div className="w-full max-w-4xl">
+        {Object.entries(groupedMembers).map(([title, membersInGroup]) => (
+          <div key={title} className="mb-12">
+            <h3 className="text-xl font-semibold text-iveyGreen mb-4 pl-4">
+              {title}
+            </h3>
+            {title === "Co-President" ? (
+              <div className="flex justify-center gap-8 mb-8">
+                {membersInGroup.map((member, index) => (
+                  <Avatar
+                    key={index}
+                    name={member.name}
+                    title={member.title}
+                    image={member.image}
+                    link={member.link}
+                    size={180}
+                    role={member.role}
+                  />
+                ))}
+              </div>
+            ) : (
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 pl-4 text-center items-center justify-center">
+                {membersInGroup.map((member, index) => (
+                  <Avatar
+                    key={index}
+                    name={member.name}
+                    title={member.title}
+                    image={member.image}
+                    link={member.link}
+                    role={member.role}
+                    size={member.image ? 150 : 120}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
       <br></br>
 
