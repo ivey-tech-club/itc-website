@@ -24,13 +24,13 @@ import { AiOutlineContacts } from "react-icons/ai";
 const members = [
   {
     name: "Jocelyn Chang",
-    title: "Co-President",
+    title: "Co-Presidents",
     image: jocelyn,
     link: "https://www.linkedin.com/in/jocelyn-chang-a710921b7/", // Add LinkedIn or other profile link here
   },
   {
     name: "Ronin Williams-Young",
-    title: "Co-President",
+    title: "Co-Presidents",
     image: ronin,
     link: "https://www.linkedin.com/in/ronin-williams-young/", // Add LinkedIn or other profile link here
   },
@@ -288,7 +288,7 @@ const Team = () => {
             <h3 className="text-xl font-semibold text-iveyGreen mb-4 pl-4">
               {title}
             </h3>
-            {title === "Co-President" ? (
+            {title === "Co-Presidents" ? (
               <div className="flex justify-center gap-8 mb-8">
                 {membersInGroup.map((member, index) => (
                   <Avatar
