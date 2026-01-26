@@ -137,138 +137,141 @@ const members = [
     name: "Luca Roma",
     title: "Sponsorship",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/luca-roma-western/", // Add LinkedIn or other profile link here
   },
   {
     name: "Khalad Osman",
     title: "Sponsorship",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/khalad-osman/", // Add LinkedIn or other profile link here
   },
   {
     name: "Hadi Youssef",
     title: "Careers",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/hadiy/", // Add LinkedIn or other profile link here
   },
   {
     name: "Barry Paul",
     title: "Careers",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/barryxpaul/", // Add LinkedIn or other profile link here
   },
   {
     name: "Annie Yu",
     title: "Careers",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/annie-yu22/", // Add LinkedIn or other profile link here
   },
   {
     name: "Parum Patel",
     title: "Communications",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/parum-p-1b498a1b1/", // Add LinkedIn or other profile link here
   },
   {
     name: "Emily Yu",
     title: "Communications",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/emily-nz-yu/", // Add LinkedIn or other profile link here
   },
   {
     name: "William Jiang",
     title: "Social",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/williamxjiang/", // Add LinkedIn or other profile link here
   },
   {
     name: "Stephanie Li",
     title: "Social",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/stephanieli802/", // Add LinkedIn or other profile link here
   },
   {
     name: "Millicent Song",
     title: "Flagship",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/millicent-song/", // Add LinkedIn or other profile link here
   },
   {
     name: "Alice Nguyen",
     title: "Flagship",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/alicebtnguyen/", // Add LinkedIn or other profile link here
   },
   {
     name: "Stella Zhu",
     title: "Flagship",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/zhustella/", // Add LinkedIn or other profile link here
   },
   {
     name: "Molly Jin",
     title: "Flagship",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/molly-jin/", // Add LinkedIn or other profile link here
   },
   {
     name: "Aaryan Joharapurkar",
     title: "Development",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/aaryanj/", // Add LinkedIn or other profile link here
   },
   {
     name: "Gloria Qi",
     title: "Development",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/gloria-qi-/", // Add LinkedIn or other profile link here
   },
   {
     name: "Juna Kim",
     title: "Development",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/kimjuna/", // Add LinkedIn or other profile link here
   },
   {
     name: "Natalie Wang",
     title: "Development",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/wang-natalie/", // Add LinkedIn or other profile link here
   },
   {
     name: "Claire Kuo",
     title: "Expedition",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/cclairey11/", // Add LinkedIn or other profile link here
   },
   {
     name: "Mehak Marwaha",
     title: "Expedition",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/mehakmarwaha2005/", // Add LinkedIn or other profile link here
   },
   {
     name: "Allison Ye",
     title: "Expedition",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/-allison-ye/", // Add LinkedIn or other profile link here
   },
   {
     name: "Dan Mick",
     title: "Expedition",
     role: "Section Rep",
-    link: "", // Add LinkedIn or other profile link here
+    link: "https://www.linkedin.com/in/danmick/", // Add LinkedIn or other profile link here
   },
 ];
 const Team = () => {
   // Group members by title
-  const groupedMembers = members.reduce((acc, member) => {
-    if (!acc[member.title]) {
-      acc[member.title] = [];
-    }
-    acc[member.title].push(member);
-    return acc;
-  }, {} as Record<string, typeof members>);
+  const groupedMembers = members.reduce(
+    (acc, member) => {
+      if (!acc[member.title]) {
+        acc[member.title] = [];
+      }
+      acc[member.title].push(member);
+      return acc;
+    },
+    {} as Record<string, typeof members>,
+  );
 
   return (
     <div
