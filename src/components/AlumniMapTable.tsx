@@ -461,35 +461,34 @@ const AlumniMapTable: React.FC = () => {
   }, [filteredAlumni, cityCoordinates]);
 
   const getLocation = (alumni: Alumni) => {
-    if (alumni.city && alumni.state) return `${alumni.city}, ${alumni.state}`;
     if (alumni.city) return alumni.city;
     return "—";
   };
 
   return (
     <section
-      className="py-12 md:py-[74px] px-4 md:px-[34px]"
+      className="py-8 md:py-[74px] px-3 sm:px-4 md:px-[34px]"
       style={{ backgroundColor: "#F8F9F2" }}
     >
       {/* Grid: row 1 = search bar, row 2 = table + map (same height) */}
       <div
-        className="mx-auto flex flex-col items-center gap-4 lg:grid lg:gap-x-[42px] lg:gap-y-4 lg:justify-center"
+        className="mx-auto flex flex-col items-center gap-4 xl:grid xl:gap-x-[42px] xl:gap-y-4 xl:justify-center"
         style={{
           gridTemplateColumns: "minmax(0, 606px) minmax(0, 713px)",
           gridTemplateRows: "auto 1fr",
         }}
       >
         {/* Search Bar + Filter — grid row 1, col 1                          */}
-        <div className="w-full max-w-[606px] lg:max-w-none lg:col-start-1 lg:row-start-1 relative z-10">
+        <div className="w-full max-w-[606px] xl:max-w-none xl:col-start-1 xl:row-start-1 relative z-10">
           <div className="flex items-center gap-3">
             {/* Search Bar */}
             <div
-              className="flex items-center gap-3 px-4 py-[10px] flex-1"
+              className="flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-[10px] flex-1 min-w-0"
               style={{
                 background: "linear-gradient(90deg, #174F42 0%, #456A61 100%)",
                 borderRadius: 24,
                 border: "0.69px solid #004938",
-                boxShadow: "0px 14px 14px 0px rgba(0, 0, 0, 0.25)",
+                boxShadow: "0px 8px 12px 0px rgba(0, 0, 0, 0.2)",
               }}
             >
               <Image
@@ -504,11 +503,10 @@ const AlumniMapTable: React.FC = () => {
                 placeholder="Search for a name or company"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="bg-transparent outline-none w-full text-sm"
+                className="bg-transparent outline-none w-full text-xs sm:text-sm"
                 style={{
                   fontFamily: "Roboto, sans-serif",
                   fontWeight: 400,
-                  fontSize: 14,
                   lineHeight: "1.17em",
                   color: "#CFF2E9",
                 }}
@@ -519,13 +517,13 @@ const AlumniMapTable: React.FC = () => {
             <div className="relative" ref={filterRef}>
               <button
                 onClick={() => setShowFilterDropdown(!showFilterDropdown)}
-                className="flex items-center justify-center w-[42px] h-[42px] cursor-pointer relative"
+                className="flex items-center justify-center w-[38px] h-[38px] sm:w-[42px] sm:h-[42px] cursor-pointer relative flex-shrink-0"
                 style={{
                   background:
                     "linear-gradient(90deg, #8BBEB2 0%, #456A61 100%)",
                   borderRadius: 24,
                   border: "0.69px solid #004938",
-                  boxShadow: "0px 14px 14px 0px rgba(0, 0, 0, 0.25)",
+                  boxShadow: "0px 8px 12px 0px rgba(0, 0, 0, 0.2)",
                 }}
               >
                 <FunnelIcon />
@@ -547,7 +545,7 @@ const AlumniMapTable: React.FC = () => {
               {/* Filter Dropdown Panel */}
               {showFilterDropdown && (
                 <div
-                  className="absolute right-0 top-full mt-2 z-50 flex flex-col justify-start items-start gap-3.5 overflow-hidden"
+                  className="absolute right-0 top-full mt-2 z-50 flex flex-col justify-start items-start gap-3.5 overflow-hidden max-h-[80vh] overflow-y-auto"
                   style={{
                     width: 240,
                     paddingLeft: 32,
@@ -631,34 +629,40 @@ const AlumniMapTable: React.FC = () => {
         {/* Table — grid row 2, col 1                                        */}
         {/* ----------------------------------------------------------------- */}
         <div
-          className="w-full max-w-[606px] lg:max-w-none lg:col-start-1 lg:row-start-2 px-[38px] pt-[41px] pb-6 overflow-hidden"
+          className="w-full max-w-[606px] xl:max-w-none xl:col-start-1 xl:row-start-2 px-3 sm:px-5 md:px-[38px] pt-5 sm:pt-[41px] pb-4 sm:pb-6 overflow-x-auto overflow-y-hidden"
           style={{
             background:
               "linear-gradient(109deg, rgba(224, 237, 232, 0.2) 0%, rgba(3, 89, 56, 0.2) 43%, rgba(135, 214, 184, 0.2) 100%)",
             borderRadius: 17,
             boxShadow: "7px 14px 14px 0px rgba(0, 0, 0, 0.08)",
-            minHeight: 700,
           }}
         >
           {/* Table Header */}
           <div
-            className="flex items-center mb-5"
+            className="flex items-center mb-3 sm:mb-5 min-w-[380px]"
             style={{
               fontFamily: "Roboto, sans-serif",
               fontWeight: 700,
-              fontSize: 17,
               lineHeight: "1.17em",
               color: "#004938",
             }}
           >
-            <span className="w-[26%]">Name</span>
-            <span className="w-[27%]">Role</span>
-            <span className="w-[22%]">Company</span>
-            <span className="w-[25%] text-left">Location</span>
+            <span className="w-[26%] text-sm sm:text-base md:text-[17px]">
+              Name
+            </span>
+            <span className="w-[27%] text-sm sm:text-base md:text-[17px]">
+              Role
+            </span>
+            <span className="w-[22%] text-sm sm:text-base md:text-[17px]">
+              Company
+            </span>
+            <span className="w-[25%] text-left text-sm sm:text-base md:text-[17px]">
+              Location
+            </span>
           </div>
 
           {/* Table Rows */}
-          <div className="flex flex-col gap-3 overflow-y-auto max-h-[590px] pr-1 alumni-scrollbar">
+          <div className="flex flex-col gap-2 sm:gap-3 overflow-y-auto max-h-[50vh] sm:max-h-[60vh] xl:max-h-[590px] pr-4 sm:pr-6 alumni-scrollbar">
             {filteredAlumni.map((alumni, index) => (
               <React.Fragment
                 key={`${alumni.firstName}-${alumni.lastName}-${index}`}
@@ -667,11 +671,10 @@ const AlumniMapTable: React.FC = () => {
                   href={alumni.linkedin || undefined}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center py-[2px]"
+                  className="flex items-center py-[2px] min-w-[380px]"
                   style={{
                     fontFamily: "Roboto, sans-serif",
                     fontWeight: 400,
-                    fontSize: 14,
                     lineHeight: "1.17em",
                     color: "#004938",
                     cursor: alumni.linkedin ? "pointer" : "default",
@@ -686,22 +689,22 @@ const AlumniMapTable: React.FC = () => {
                   }}
                   onMouseLeave={() => setHoveredLocation(null)}
                 >
-                  <span className="w-[26%] truncate pr-2">
+                  <span className="w-[26%] truncate pr-2 text-xs sm:text-sm">
                     {alumni.firstName} {alumni.lastName}
                   </span>
-                  <span className="w-[27%] truncate pr-2">
+                  <span className="w-[27%] truncate pr-2 text-xs sm:text-sm">
                     {alumni.jobPosition || "—"}
                   </span>
-                  <span className="w-[22%] truncate pr-2">
+                  <span className="w-[22%] truncate pr-2 text-xs sm:text-sm">
                     {alumni.company || "—"}
                   </span>
-                  <span className="w-[25%] truncate">
+                  <span className="w-[25%] truncate text-xs sm:text-sm">
                     {getLocation(alumni)}
                   </span>
                 </a>
                 {index < filteredAlumni.length - 1 && (
                   <div
-                    className="w-full"
+                    className="w-full min-w-[380px]"
                     style={{
                       height: 0.69,
                       backgroundColor: "#7FB8AB",
@@ -728,7 +731,7 @@ const AlumniMapTable: React.FC = () => {
         </div>
 
         {/* Map — grid row 2, col 2 (same row as table = same height)        */}
-        <div className="w-full max-w-[713px] lg:max-w-none lg:col-start-2 lg:row-start-2 relative overflow-hidden">
+        <div className="w-full max-w-[606px] xl:max-w-none xl:col-start-2 xl:row-start-2 relative overflow-hidden h-[280px] sm:h-[380px] md:h-[480px] xl:h-auto">
           <div className="w-full h-full">
             <AlumniMap
               locationClusters={locationClusters}
@@ -779,7 +782,7 @@ const AlumniMapTable: React.FC = () => {
       {/* Custom scrollbar styles */}
       <style jsx global>{`
         .alumni-scrollbar::-webkit-scrollbar {
-          width: 4px;
+          width: 6px;
         }
         .alumni-scrollbar::-webkit-scrollbar-track {
           background: rgba(0, 73, 56, 0.1);
