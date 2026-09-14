@@ -45,6 +45,12 @@ footer { padding:30px 24px 36px; border-top:1px solid var(--line); display:grid;
 
 /* Reference-inspired post-login surface */
 .reference-shell { --reference-accent:#6c9b7b; --reference-header-height:72px; --reference-viewport-bottom-space:var(--reference-header-height); --reference-frame-width:min(1600px,calc(100% - 16px)); --reference-content-width:min(1160px,calc(100% - 48px)); --reference-content-inset:max(24px,calc((100% - 1160px) / 2)); --reference-frame-content-inset:32px; --section-space:clamp(64px,6vw,96px); --section-space-large:clamp(96px,10vw,144px); --section-space-feature:clamp(56px,5vw,80px); --section-space-small:clamp(40px,4vw,64px); --content-gap:clamp(24px,3vw,40px); min-height:100vh; background:var(--paper); color:var(--ink); }
+.ticket-banner { min-height:44px; display:flex; align-items:center; justify-content:center; gap:14px; padding:10px 20px; border-bottom:1px solid rgba(217,232,221,.2); background:var(--forest); color:var(--cream); font:500 12px/1.2 var(--font-geist-mono),monospace; transition:background-color .16s ease,color .16s ease; }
+.ticket-banner:hover { background:var(--green); }
+.ticket-banner:focus-visible { outline:2px solid var(--clay); outline-offset:-3px; }
+.ticket-banner__status { color:var(--mint); text-transform:uppercase; letter-spacing:.08em; }
+.ticket-banner__message { font:600 15px/1 var(--font-montreal),sans-serif; letter-spacing:-.02em; }
+.ticket-banner__action { color:var(--mint); border-bottom:1px solid currentColor; }
 .reference-header { width:100%; min-height:72px; margin:0; padding:10px max(20px,calc((100% - 1160px) / 2)); display:flex; align-items:center; gap:28px; box-sizing:border-box; border-bottom:1px solid rgba(21,77,60,.12); background:#fff; color:var(--ink); }
 .reference-header__brand { display:flex; flex:1 1 0; width:auto; align-items:center; border-radius:10px; }
 .reference-header__brand img { display:block; width:50px; height:50px; object-fit:contain; }
@@ -633,6 +639,12 @@ footer { padding:30px 24px 36px; border-top:1px solid var(--line); display:grid;
   transform: none;
 }
 
+.event-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
 .event-card__content {
   position: static;
   display: flex;
@@ -658,38 +670,73 @@ footer { padding:30px 24px 36px; border-top:1px solid var(--line); display:grid;
   filter: saturate(1.04) contrast(1.03);
 }
 
+.event-card__status {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 1;
+  padding: 8px 10px;
+  border: 1px solid rgba(217, 232, 221, 0.82);
+  border-radius: 6px;
+  background: var(--forest);
+  color: var(--mint);
+  font: 600 10px / 1 var(--font-geist-mono), monospace;
+  letter-spacing: 0.03em;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.16s ease, visibility 0.16s ease;
+}
+
+.event-card--coming-soon:hover .event-card__status {
+  opacity: 1;
+  visibility: visible;
+}
+
 .event-card__body {
   display: flex;
-  min-height: 92px;
+  min-height: 128px;
   flex: 1;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
   padding: 0 2px 2px;
   color: var(--ink);
 }
 
 .event-card h3 {
   max-width: 100%;
+  min-height: 2.08em;
   margin: 0;
   font: 600 clamp(18px, 1.75vw, 25px) / 1.04 var(--font-montreal), sans-serif;
   letter-spacing: -0.055em;
 }
 
-.event-card p.event-card__location {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin: 0;
-  color: #585858;
-  font: 400 11px / 1.2 var(--font-geist-sans), sans-serif;
+.event-card h3 span {
+  display: block;
 }
 
-.event-card__location svg {
-  width: 12px;
-  height: 12px;
+.event-card__details {
+  display: grid;
+  gap: 9px;
+  margin-top: auto;
+}
+
+.event-card p.event-card__location,
+.event-card p.event-card__date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: #585858;
+  font: 400 14px / 1.25 var(--font-geist-sans), sans-serif;
+}
+
+.event-card__location svg,
+.event-card__date svg {
+  width: 16px;
+  height: 16px;
   flex: 0 0 auto;
   color: #4b9a89;
-  stroke-width: 1.5;
+  stroke-width: 1.7;
 }
 
 .events-more {
@@ -790,6 +837,18 @@ footer { padding:30px 24px 36px; border-top:1px solid var(--line); display:grid;
 }
 
 @media (max-width: 760px) {
+  .ticket-banner {
+    flex-wrap: wrap;
+    gap: 9px;
+    row-gap: 5px;
+    padding: 10px 14px;
+    font-size: 10px;
+  }
+
+  .ticket-banner__message {
+    font-size: 13px;
+  }
+
   .reference-shell {
     --section-space: 64px;
     --section-space-large: 76px;
