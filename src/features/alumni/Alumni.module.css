@@ -27,7 +27,7 @@
 
 .sectionUtilityRow > p {
   color: rgba(24, 35, 29, 0.58);
-  font: 11px/1.3 var(--font-geist-mono), monospace;
+  font: 11px/1.3 var(--font-montreal), sans-serif;
 }
 
 .findLabel {
@@ -158,7 +158,7 @@
   border-radius: 10px;
   background: #d9e8dd;
   color: #004938;
-  font: 700 10px/1 var(--font-geist-mono), monospace;
+  font: 700 10px/1 var(--font-montreal), sans-serif;
 }
 
 .filterPanel {
@@ -196,7 +196,7 @@
   border-bottom: 1px solid currentColor;
   background: transparent;
   color: #fff;
-  font: 500 10px/1.2 var(--font-geist-mono), monospace;
+  font: 500 10px/1.2 var(--font-montreal), sans-serif;
   cursor: pointer;
 }
 
@@ -270,7 +270,7 @@
   min-height: 28px;
   padding: 0 13px 8px;
   color: rgba(0, 73, 56, 0.68);
-  font: 10px/1.3 var(--font-geist-mono), monospace;
+  font: 10px/1.3 var(--font-montreal), sans-serif;
 }
 
 .resultSummary > span {
@@ -443,7 +443,7 @@
   place-items: center;
   min-height: 100%;
   color: rgba(0, 73, 56, 0.62);
-  font: 12px/1.4 var(--font-geist-mono), monospace;
+  font: 12px/1.4 var(--font-montreal), sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
@@ -522,7 +522,7 @@
 
 .profileStackHeader span {
   color: rgba(255, 255, 255, 0.76);
-  font: 9px/1.2 var(--font-geist-mono), monospace;
+  font: 9px/1.2 var(--font-montreal), sans-serif;
 }
 
 .profileStackHeader button {
@@ -817,7 +817,7 @@
     display: block;
     margin-bottom: 2px;
     color: rgba(0, 73, 56, 0.56);
-    font: 11px/1.2 var(--font-geist-mono), monospace;
+    font: 11px/1.2 var(--font-montreal), sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.04em;
   }
@@ -879,7 +879,7 @@
 .cohortsHeader > div:first-child > p {
   margin-bottom: 12px;
   color: #154d3c;
-  font: 600 11px/1.2 var(--font-geist-mono), monospace;
+  font: 600 11px/1.2 var(--font-montreal), sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -904,7 +904,7 @@
   border: 0;
   background: transparent;
   color: rgba(24, 35, 29, 0.58);
-  font: 500 10px/1.2 var(--font-geist-mono), monospace;
+  font: 500 10px/1.2 var(--font-montreal), sans-serif;
   cursor: pointer;
 }
 
@@ -1266,7 +1266,7 @@
 .sectionEyebrow {
   margin: 0 0 6px;
   color: rgba(24, 35, 29, 0.6);
-  font: 600 12px/1.2 var(--font-geist-mono), monospace;
+  font: 600 12px/1.2 var(--font-montreal), sans-serif;
 }
 
 .explorerTitle {
@@ -1279,7 +1279,7 @@
 .networkSummary {
   margin: 0;
   color: rgba(24, 35, 29, 0.62);
-  font: 13px/1.35 var(--font-geist-mono), monospace;
+  font: 13px/1.35 var(--font-montreal), sans-serif;
 }
 
 .directoryWorkspaceHeader {
@@ -1338,7 +1338,7 @@
 
 .cityChip span {
   color: rgba(0, 73, 56, 0.62);
-  font: 12px/1 var(--font-geist-mono), monospace;
+  font: 12px/1 var(--font-montreal), sans-serif;
 }
 
 .cityChip[aria-pressed="true"] {
@@ -1748,7 +1748,7 @@
 .sectionEyebrow {
   margin: 0 0 8px;
   color: #154d3c;
-  font: 600 10px/1.2 var(--font-geist-mono), monospace;
+  font: 600 10px/1.2 var(--font-montreal), sans-serif;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -1763,7 +1763,7 @@
 .networkSummary {
   margin: 0 0 4px;
   color: rgba(24, 35, 29, 0.58);
-  font: 11px/1.35 var(--font-geist-mono), monospace;
+  font: 11px/1.35 var(--font-montreal), sans-serif;
   white-space: nowrap;
 }
 
@@ -1848,7 +1848,7 @@
 .directoryTable th {
   padding-bottom: 13px;
   color: rgba(24, 35, 29, 0.56);
-  font: 600 10px/1.2 var(--font-geist-mono), monospace;
+  font: 600 10px/1.2 var(--font-montreal), sans-serif;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -1901,7 +1901,7 @@
 
 .mapPanelHeader > span {
   color: rgba(24, 35, 29, 0.58);
-  font: 10px/1.2 var(--font-geist-mono), monospace;
+  font: 10px/1.2 var(--font-montreal), sans-serif;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -2145,7 +2145,7 @@
   border-radius: 50%;
   background: #d7e3dd;
   color: #154d3c;
-  font: 600 9px/1 var(--font-geist-mono), monospace;
+  font: 600 9px/1 var(--font-montreal), sans-serif;
 }
 
 .directoryAvatar img {
@@ -2235,7 +2235,7 @@
   border-radius: 50%;
   background: #d7e3dd;
   color: #154d3c;
-  font: 600 12px/1 var(--font-geist-mono), monospace;
+  font: 600 12px/1 var(--font-montreal), sans-serif;
 }
 
 .cohortRosterImage img {

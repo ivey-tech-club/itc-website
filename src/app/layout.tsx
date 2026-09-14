@@ -7,11 +7,6 @@ const geistSans = localFont({
 	variable: "--font-geist-sans",
 	weight: "100 900",
 });
-const geistMono = localFont({
-	src: "./fonts/GeistMonoVF.woff",
-	variable: "--font-geist-mono",
-	weight: "100 900",
-});
 const redFive = localFont({
 	src: "./fonts/REDFIVE_.woff",
 	variable: "--font-redfive",
@@ -37,9 +32,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} ${redFive.variable} ${montreal.variable} antialiased`}
-			>
+			<body className={`${geistSans.variable} ${redFive.variable} ${montreal.variable} antialiased`}>
 				{children}
 			</body>
 		</html>

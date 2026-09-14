@@ -25,7 +25,7 @@ export default function ClubSnapshot() {
 
         <div className="club-snapshot__copy">
           <h2 id="club-snapshot-title">
-            Where Ivey students turn curiosity into <em>capability.</em>
+            Where Ivey students turn curiosity into capability.
           </h2>
           <p>
             Ivey Tech Club makes technology a more approachable path for Ivey students.
