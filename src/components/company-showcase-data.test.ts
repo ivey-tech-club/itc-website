@@ -7,6 +7,7 @@ import {
   getFeaturedAlumniWorkplaces,
 } from "./company-showcase-data";
 import showcase from "../data/json/company-showcase.json";
+import { loadAlumni } from "../features/alumni/load-alumni";
 
 describe("getFeaturedAlumniWorkplaces", () => {
   it("keeps the requested workplace set in the homepage showcase", () => {
@@ -146,6 +147,23 @@ describe("getFeaturedAlumniWorkplaces", () => {
       ),
     ).toBe(true);
     expect(workplaces.some((workplace) => workplace.logoPath?.startsWith("http"))).toBe(false);
+  });
+
+  it("gives every company in the full alumni dataset a local logo asset", async () => {
+    const workplaces = getFeaturedAlumniWorkplaces(
+      await loadAlumni(),
+      showcase.alumniWorkplaces,
+    );
+
+    expect(workplaces).toHaveLength(40);
+    expect(workplaces.every((workplace) => workplace.logoPath?.startsWith("/company-logos/"))).toBe(true);
+    expect(
+      workplaces.every((workplace) =>
+        workplace.logoPath
+          ? existsSync(resolve(process.cwd(), "public", workplace.logoPath.slice(1)))
+          : false,
+      ),
+    ).toBe(true);
   });
 
   it("merges the curated current-year workplaces with all alumni records once", () => {
