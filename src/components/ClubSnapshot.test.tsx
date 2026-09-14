@@ -12,6 +12,7 @@ describe("ClubSnapshot", () => {
         name: /where ivey students turn curiosity into capability/i,
       }),
     ).toBeInTheDocument();
+    expect(screen.getByRole("heading").querySelector("em")).not.toBeInTheDocument();
     expect(screen.getByText("Ivey students in our community")).toBeInTheDocument();
     expect(screen.getByText("dual-degree students in the club")).toBeInTheDocument();
     expect(screen.getByText("students connected through mentorship")).toBeInTheDocument();
