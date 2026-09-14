@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "notes": {
+    "workedWith": "Partner records use the local sponsor assets already in the project.",
+    "featuredAlumniWorkplaces": "Requested workplace set with local vector logo assets."
+  },
+  "workedWith": [
+    {
+      "id": "bain-capital",
+      "name": "Bain Capital",
+      "logoAsset": "baincapital",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/baincapital.png"
+    },
+    {
+      "id": "birch-hill",
+      "name": "Birch Hill Equity Partners",
+      "logoAsset": "birchhill",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/birchhill.png"
+    },
+    {
+      "id": "bond-loyalty",
+      "name": "Bond Loyalty",
+      "logoAsset": "bondloyalty",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/bondloyalty.png"
+    },
+    {
+      "id": "cartage",
+      "name": "Cartage",
+      "logoAsset": "cartage",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/cartage.png"
+    },
+    {
+      "id": "finetune",
+      "name": "Finetune",
+      "logoAsset": "finetune",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/finetune.png"
+    },
+    {
+      "id": "mckinsey",
+      "name": "McKinsey & Company",
+      "logoAsset": "mckinsey",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/mckinsey.png"
+    },
+    {
+      "id": "meter",
+      "name": "Meter",
+      "logoAsset": "meter",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/meter.png"
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "logoAsset": "microsoft",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/microsoft.png"
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "logoAsset": "notion",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/notion.png"
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "logoAsset": "nvidia",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/nvidia.png"
+    },
+    {
+      "id": "ramp",
+      "name": "Ramp",
+      "logoAsset": "ramp",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/ramp.png"
+    },
+    {
+      "id": "rbi",
+      "name": "Restaurant Brands International",
+      "logoAsset": "rbi",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/rbi.png"
+    },
+    {
+      "id": "riley",
+      "name": "Riley",
+      "logoAsset": "riley",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/riley.png"
+    },
+    {
+      "id": "salesforce",
+      "name": "Salesforce",
+      "logoAsset": "salesforce",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/salesforce.png"
+    },
+    {
+      "id": "scale-ai",
+      "name": "Scale AI",
+      "logoAsset": "scaleai",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/scaleai.png"
+    },
+    {
+      "id": "upshot",
+      "name": "Upshot Ventures",
+      "logoAsset": "upshot",
+      "logoSource": "existing sponsor asset",
+      "sourcePath": "src/assets/sponsors/upshot.png"
+    }
+  ],
+  "alumniWorkplaces": [
+    {
+      "id": "capital-one",
+      "name": "Capital One",
+      "logoPath": "/company-logos/capital-one.svg"
+    },
+    {
+      "id": "rbc",
+      "name": "RBC",
+      "logoPath": "/company-logos/rbc.svg"
+    },
+    {
+      "id": "wealthsimple",
+      "name": "Wealthsimple",
+      "logoPath": "/company-logos/wealthsimple.svg"
+    },
+    {
+      "id": "td",
+      "name": "TD",
+      "logoPath": "/company-logos/td.svg"
+    },
+    {
+      "id": "mastercard",
+      "name": "Mastercard",
+      "logoPath": "/company-logos/mastercard.svg"
+    },
+    {
+      "id": "pwc",
+      "name": "PwC",
+      "logoPath": "/company-logos/pwc.svg"
+    },
+    {
+      "id": "scene-plus",
+      "name": "Scene+",
+      "logoPath": "/company-logos/scene-plus.svg"
+    },
+    {
+      "id": "lyft",
+      "name": "Lyft",
+      "logoPath": "/company-logos/lyft.svg"
+    }
+  ]
+}

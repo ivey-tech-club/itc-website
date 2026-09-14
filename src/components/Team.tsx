@@ -149,9 +149,7 @@ const Team = () => {
 
       <div className="flex items-center space-x-2 mt-4">
         <a
-          href="https://wheatsnackbread.github.io/iveytechclub.ca/alumni"
-          rel="noreferrer"
-          target="_blank"
+          href="/alumni"
           className="flex items-center space-x-2 border border-iveyGreen rounded-md px-4"
         >
           <AiOutlineContacts

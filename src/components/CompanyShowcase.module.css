@@ -1,0 +1,269 @@
+.showcase {
+  width: var(--reference-frame-width);
+  margin: 0 auto;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--mint);
+  color: var(--ink);
+}
+
+.inner {
+  width: min(1160px, calc(100% - var(--reference-frame-content-inset)));
+  margin: 0 auto;
+  padding: var(--section-space-large) 0 0;
+}
+
+.partnerSection {
+  padding: 0 0 var(--section-space-small);
+}
+
+.blockHeader {
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.blockHeader h2,
+.alumniCopy h3 {
+  color: var(--ink);
+  font: 700 clamp(32px, 3.5vw, 48px)/0.96 var(--font-montreal), var(--font-geist-sans), sans-serif;
+  letter-spacing: -0.055em;
+}
+
+.partnerDescription {
+  max-width: none;
+  margin-top: 14px;
+  color: rgba(24, 35, 29, 0.68);
+  font: 400 15px/1.45 var(--font-geist-sans), sans-serif;
+}
+
+.partnerGrid {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  margin-top: 18px;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.partner {
+  display: grid;
+  min-height: 112px;
+  place-items: center;
+  padding: 14px 10px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.partnerImage {
+  display: block;
+  width: min(100%, 136px);
+  height: 72px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+
+.fallbackWordmark {
+  color: var(--green);
+  font: 700 16px/1.1 var(--font-montreal), var(--font-geist-sans), sans-serif;
+  text-align: center;
+}
+
+.alumni {
+  padding: var(--section-space-small) 0;
+  border-top: 1px solid var(--line);
+  background: var(--mint);
+  color: var(--ink);
+}
+
+.alumniInner {
+  width: 100%;
+  margin: 0;
+}
+
+.alumniIntro {
+  max-width: none;
+}
+
+.alumniCopy p {
+  max-width: none;
+  margin-top: 14px;
+  color: rgba(24, 35, 29, 0.68);
+  font: 400 15px/1.45 var(--font-geist-sans), sans-serif;
+}
+
+.marqueeStack {
+  display: grid;
+  gap: 0;
+  margin-top: var(--content-gap);
+}
+
+.marqueeViewport {
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+}
+
+.marqueeViewport:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.marqueeTrack {
+  display: flex;
+  width: max-content;
+  animation: company-marquee-forward 90s linear infinite;
+  will-change: transform;
+}
+
+.marqueeTrackReverse {
+  animation-name: company-marquee-reverse;
+  animation-duration: 90s;
+}
+
+.marqueeLogo {
+  display: flex;
+  width: 190px;
+  min-width: 190px;
+  flex: 0 0 auto;
+  min-height: 82px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 28px;
+  box-sizing: border-box;
+  border-right: 1px solid var(--line);
+  color: var(--ink);
+  font: 500 14px/1.1 var(--font-geist-sans), sans-serif;
+  white-space: nowrap;
+}
+
+.marqueeLogoName {
+  min-width: 0;
+  flex: 0 1 auto;
+  text-align: left;
+  white-space: normal;
+}
+
+.alumniMark {
+  display: grid;
+  width: 56px;
+  height: 32px;
+  flex: 0 0 auto;
+  place-items: center;
+  color: var(--ink);
+}
+
+.alumniMark img {
+  display: block;
+  width: 56px;
+  height: 32px;
+  object-fit: contain;
+  filter: grayscale(1) contrast(1.12);
+  opacity: 0.82;
+}
+
+.alumniMarkWordmark {
+  width: 72px;
+}
+
+.alumniMarkWordmark img {
+  width: 72px;
+}
+
+.alumniMarkFallback {
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  place-items: center;
+  color: var(--ink);
+  font: 700 13px/1 var(--font-geist-sans), sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.duplicate {
+  display: block;
+}
+
+@keyframes company-marquee-forward {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes company-marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 760px) {
+  .showcase {
+    width: var(--reference-frame-width);
+  }
+
+  .inner {
+    width: min(1160px, calc(100% - var(--reference-frame-content-inset)));
+    padding-top: var(--section-space-large);
+  }
+
+  .partnerSection {
+    padding-bottom: var(--section-space-small);
+  }
+
+  .partnerGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .partner {
+    min-height: 96px;
+    padding: 10px 8px;
+  }
+
+  .partnerImage {
+    width: min(100%, 142px);
+    height: 58px;
+  }
+
+  .alumni {
+    padding: var(--section-space-small) 0;
+  }
+
+  .alumniInner {
+    width: 100%;
+  }
+
+  .blockHeader h2,
+  .alumniCopy h3 {
+    font-size: clamp(30px, 10vw, 42px);
+  }
+
+  .marqueeStack {
+    margin-top: var(--content-gap);
+  }
+
+  .marqueeLogo {
+    width: 164px;
+    min-width: 164px;
+    min-height: 76px;
+    padding: 0 20px;
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marqueeTrack {
+    width: 100%;
+    flex-wrap: wrap;
+    animation: none;
+  }
+
+  .duplicate {
+    display: none;
+  }
+}
