@@ -106,19 +106,6 @@ function EventCard({ event }: { event: (typeof events)[number] }) {
 export default function Home() {
   return (
     <div className="site-shell reference-shell">
-      <a
-        className="ticket-banner"
-        href={breakingIntoTechTicketUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Buy tickets for Breaking Into Tech Conference"
-      >
-        <span className="ticket-banner__status">Tickets open</span>
-        <span className="ticket-banner__message">Breaking Into Tech Conference</span>
-        <span className="ticket-banner__action">
-          Get tickets <span aria-hidden="true">↗</span>
-        </span>
-      </a>
       <SiteHeader />
 
       <main id="top">
